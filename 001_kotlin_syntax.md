@@ -32,20 +32,28 @@
 
 ![Kiểu Dữ Liệu](img/KieuDuLieu.png)
 > Lưu ý khai báo kiểu `Float` cần thêm `f` (5.6f)
+>
 > Khai báo kiểu `Long` cần thêm `L` (19L)
+>
 > Nếu khai báo 1 đoạn String có thể dùng """ string """
 
 - khai báo `var (val) <tên biến>: <kiểu dữ liệu> = <giá trị>` hoặc `var (val) <tên biến> <giá trị>` (khai báo trực tiếp sẽ nhận kdl (int cho số nguyên, double cho số thực))
 ### Ép kiểu
 - Có 2 dạng ép kiểu
-  - Ép kiểu rộng: Ép kiểu từ kdl bé -> lớn
-  - Ép kiểu hẹp: Ép kiểu từ kdl lớn -> bé (có thể xảy ra hiện tượng mất dữ liệu)
+    - Ép kiểu rộng: Ép kiểu từ kdl bé -> lớn
+    - Ép kiểu hẹp: Ép kiểu từ kdl lớn -> bé (có thể xảy ra hiện tượng mất dữ liệu)
 > toByte() -> Byte
+>
 > toShort() -> Short
+>
 > toInt() -> Int
+>
 > toLong() -> Long
+>
 > toFloat() -> Float
+>
 > toDouble() -> Double
+>
 > toChar() -> Char
 - **Ép kiểu rộng**
 ```kotlin
@@ -75,6 +83,11 @@ val b = a.toInt() // b = 10
 
 ### Mảng
 - Khai báo mảng: var <name>: typeArry = typeArrayOf<giá trị>
+- val <name> = arrayOf()
+- val <name>: Array<T?> = arrayOfNull(size)// mảng null
+- val <name> = emtyArray<T>() // mảng empty
+- val <name> = Array<T>(size) // khởi tạo mảng với kích thước size
+- val asc = Array(5) { i -> (i * i).toString() } //Khởi tạo array bằng hàm lambda với ptu là i * i
 
 ## Câu lệnh rẽ nhánh
 - Giống như các ngôn ngữ đã được học
@@ -94,15 +107,15 @@ when(expression){
 ```
 - Có thể sử dụng các biểu thức tùy ý (không chỉ hằng số) làm điều kiện nhánh
 - Có thế kiểm tra giá giá trị in or !in trong 1 khoảng hoặc 1 collection
-- `when` có thể thay thế `if - else if` khi không có expression 
+- `when` có thể thay thế `if - else if` khi không có expression
 
 ## Loop
 - `for (item in collection)` print(item): giống forEach
 - `for (i in range)` // lặp qua 1 dãy
 - `for (i in a dowTo b step c)`// for ngược từ a -> b bước nhảy c
-- `for (in in arr.indices)` // 
+- `for (in in arr.indices)` //
 - Hoặc sử dụng `withIndex` trong thư viện for ((index, value) in array.withIndex) (index: 1, 2 ,3 ..; value Array[index])
-- `while`, `do-while` giống như các ngôn ngữ đã học 
+- `while`, `do-while` giống như các ngôn ngữ đã học
 
 ## Break, Continue, Return
 - `return` trả về giá trị khi kết thúc hàm hoặc anonymous function
@@ -193,11 +206,11 @@ lockedName[0] = "b";// Lỗi do lockedName read-only
 ## Null Safety
 ### Nullable types and non-nullable types
 - Các nguyên nhân gây NPE (NullPointerException) trong Kotlin:
-  - Gọi tới hàm sử dụng `throw NullPointerException()`
-  - Sử dụng toán tử `!!`
-  - Không nhất quán trong việc khởi tạo:
-    - Chưa khởi tạo giá trị cho `this` nhưng lại sử dụng ở một chỗ nào đó
-    - Super class contructor gọi tới 1 thuộc tính hoặc phương thức chưa được khởi tạo
+    - Gọi tới hàm sử dụng `throw NullPointerException()`
+    - Sử dụng toán tử `!!`
+    - Không nhất quán trong việc khởi tạo:
+        - Chưa khởi tạo giá trị cho `this` nhưng lại sử dụng ở một chỗ nào đó
+        - Super class contructor gọi tới 1 thuộc tính hoặc phương thức chưa được khởi tạo
 - Trong kotlin, hệ thống phân biệt giữa các tham chiếu có thể chứa null và không thể chứa null (String không thể chứa null)
 ```kotlin
 var a: String = "abc"
