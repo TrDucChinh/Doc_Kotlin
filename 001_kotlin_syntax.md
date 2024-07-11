@@ -38,6 +38,7 @@
 > Nếu khai báo 1 đoạn String có thể dùng """ string """
 
 - khai báo `var (val) <tên biến>: <kiểu dữ liệu> = <giá trị>` hoặc `var (val) <tên biến> <giá trị>` (khai báo trực tiếp sẽ nhận kdl (int cho số nguyên, double cho số thực))
+- `const val` sử dụng như biến toàn cục và phải khai báo giá trị trước (compile) `val` không cần (runtime)
 ### Ép kiểu
 - Có 2 dạng ép kiểu
     - Ép kiểu rộng: Ép kiểu từ kdl bé -> lớn
@@ -116,7 +117,7 @@ when(expression){
 - `for (in in arr.indices)` //
 - Hoặc sử dụng `withIndex` trong thư viện for ((index, value) in array.withIndex) (index: 1, 2 ,3 ..; value Array[index])
 - `while`, `do-while` giống như các ngôn ngữ đã học
-
+- `repeat(n){}`
 ## Break, Continue, Return
 - `return` trả về giá trị khi kết thúc hàm hoặc anonymous function
 - `break` dừng loop
