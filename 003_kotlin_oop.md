@@ -1,3 +1,10 @@
+- [OOP Trong Kotlin](#oop-trong-kotlin)
+  - [Inheritance](#inheritance)
+    - [Ghi đè phương thức và thuộc tính](#ghi-đè-phương-thức-và-thuộc-tính)
+  - [Abstraction](#abstraction)
+    - [Interface](#interface)
+    - [Abstact Class](#abstact-class)
+
 # OOP Trong Kotlin
 ## Inheritance
 - Tất cả các `class` trong `Kotlin` đều có 1 superclass chung đó là `Any`
