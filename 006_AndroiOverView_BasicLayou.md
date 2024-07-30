@@ -68,10 +68,10 @@ dependencies {
   - `kotlin+java` : gồm **Kotlin** và **Java** source code files.
   - `res` : gồm tất cả non-code resources : XML layouts, UI strings, bitmap images.
   - `Gradle Scripts` : Bao gồm các build files
-![alt text](img\AndroidView.png)
+![alt text](img/AndroidView.png)
 
 ##### Project View
-![alt text](img\ProjectView.png)
+![alt text](img/ProjectView.png)
 
 - Giúp xem được cấu trúc tổ chức file thực tế của project, bao gồm cả những hidden files ở Android View.
 `*module-name/*`
@@ -97,7 +97,7 @@ dependencies {
 
 Dưới đây ta có một sơ đồ phân cấp View
 
-![alt text](img\AndroidLayout.png)
+![alt text](img/AndroidLayout.png)
 
 - Một View sẽ luôn bao gồm các thuộc tính sau
 
@@ -110,7 +110,7 @@ Dưới đây ta có một sơ đồ phân cấp View
 |margin|Khoảng từ các cạnh của view hiện tại tới các view khác|
 |padding|Khoảng cách từ các cạnh của view tới phần content của nó|
 - Ta có thể phân biệt margin và padding bảng hình sau:
-![](img\Padding_Margin.png)
+![](img/Padding_Margin.png)
 
 ##### TextView
 - Là một View cho phép hiện thị các dòng chữ (text) trên màn hình, nó có nhiều thuộc tính tùy mục đích sử dụng mà áp dụng, như thiết lập cỡ chữ, font chữ, màu chữ ...

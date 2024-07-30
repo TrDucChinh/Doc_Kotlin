@@ -80,7 +80,7 @@ val b = a.toInt() // b = 10
 | /       | a.div(b)    |
 | %       | a.rem(b)    |
 
-![alt text](img/image.png)
+![alt text](img/ThuTuUuTien.png)
 
 ### Mảng
 - Khai báo mảng: var <name>: typeArry = typeArrayOf<giá trị>
