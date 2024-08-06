@@ -229,3 +229,4 @@ startActivity(intent)
 
 - Tương thích
   - Đối với các thiết bị chạy phiên bản Android thấp hơn Android Q, tính năng multi-resume không có sẵn, vì vậy bạn cần sử dụng các phương thức vòng đời Activity truyền thống (onResume, onPause, v.v.) để quản lý trạng thái của Activity.
+- android 31 -> Back, android 29 -> onTopResume
