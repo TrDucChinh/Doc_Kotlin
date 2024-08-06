@@ -57,7 +57,16 @@
 - Trong runtime, `FragmentManager` có thể thực hiện các hành động thêm, xóa, thay thế liên quan đến `Fragment` và mỗi lần thực hiện một thao tác thay đổi đó gọi là một `transaction`, và chúng ta có thể quản lý chúng thông qua `FragmentTransaction`. Trong một `transaction`, ta có thể sử dụng các phương thức như `add()` hay `replace()`
 
 >**`Khác nhau giữa add() và replace()`**
->- a
+>- add () 
+Chức năng: Phương thức add thêm một Fragment mới vào một ViewGroup (chẳng hạn như FrameLayout) mà không thay thế bất kỳ Fragment nào đã có trước đó.
+Ứng dụng: Thường được sử dụng khi bạn muốn hiển thị nhiều Fragment cùng một lúc hoặc khi bạn muốn thêm một Fragment mới mà vẫn giữ các Fragment cũ.
+Back Stack: Nếu bạn thêm Fragment vào back stack, khi nhấn nút "Back", Fragment sẽ bị xóa, và các Fragment trước đó sẽ vẫn còn hiển thị.
+>- replace()
+Chức năng: Phương thức replace xóa bỏ tất cả các Fragment đang được gắn vào ViewGroup và thay thế bằng một Fragment mới.
+Ứng dụng: Thường được sử dụng khi bạn muốn thay đổi toàn bộ nội dung của ViewGroup bằng một Fragment khác, thường trong các trường hợp như chuyển đổi giữa các màn hình khác nhau.
+Back Stack: Nếu replace được thêm vào back stack, khi nhấn nút "Back", Fragment mới sẽ bị xóa và các Fragment đã được thay thế sẽ không quay lại (nếu chúng không được giữ trong back stack trước đó).
+**`add: Thêm Fragment mới, không thay thế các Fragment hiện có.
+replace: Thay thế tất cả các Fragment hiện có bằng Fragment mới.`**
 
 
 - Một số hàm
