@@ -239,7 +239,8 @@ ORDER BY column1 [ASC|DESC], column2 [ASC|DESC], ...;
 ```SQL
 SELECT column1, column2, ...
 FROM table_name
-LIMIT number;
+LIMIT number
+OFFSET number; (optional)
 ```
 - Kết hợp các điều kiện ***WHERE, ORDER BY, và LIMIT***
 ```SQL
