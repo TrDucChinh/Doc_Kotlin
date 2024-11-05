@@ -202,3 +202,5 @@ data class NotetState(
     val isLoading: Boolean = false,
     val errorMessage: String? = null
 )
+
+Factory && observe design pattern
