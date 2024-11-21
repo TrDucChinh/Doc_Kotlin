@@ -1028,3 +1028,4 @@ liveData.observe(viewLifecycleOwner) { value ->
 |Hỗ trợ xử lý dữ liệu mạnh mẽ.	|Tự động nhận biết vòng đời.|
 |Phát nhiều giá trị theo thời gian.	|Chỉ lưu và phát giá trị hiện tại.|
 |Quản lý vòng đời thủ công.|	Tự động quản lý vòng đời.|
+
